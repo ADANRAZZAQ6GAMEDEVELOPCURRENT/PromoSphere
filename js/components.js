@@ -3,7 +3,6 @@ const Components = {
     const safeName = Utils.escapeHTML(product.name);
     const safeCategory = (product.category && product.category.trim()) ? Utils.escapeHTML(product.category.trim()) : "";
     const safeCode = Utils.escapeHTML(product.id);
-    const priceText = product.price ? Utils.formatPrice(product.price, product.currency) : "";
     const hasImage = Array.isArray(product.images) && product.images.length > 0 && product.images[0];
     const primaryImg = hasImage ? Utils.sanitizeURL(product.images[0]) : "";
 
@@ -28,7 +27,6 @@ const Components = {
           ${safeCategory ? `<span class="product-category-tag">${safeCategory}</span>` : ""}
           <h2 class="product-title" title="${safeName}">${safeName}</h2>
           <div class="product-meta-row">
-            ${priceText ? `<span class="product-price">${priceText}</span>` : `<span class="product-meta-placeholder"></span>`}
             <span class="product-code-badge">#${safeCode}</span>
           </div>
           <a href="product.html?id=${encodeURIComponent(product.id)}" class="cta-button product-card-action">
