@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PromoSphere | Product Discovery</title>
+  <meta name="description" content="A curated directory to discover lifestyle, home, and functional products.">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
 
+  <header class="site-header">
+    <div class="site-container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="PromoSphere Home">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>PromoSphere</span>
+      </a>
+      <nav>
+        <a href="products.html" class="nav-link">View All Products</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="site-container">
+      <section class="hero-section">
+        <h1 class="hero-title">Find Something Worth Discovering</h1>
+        
+        <form id="search-form" class="search-box" role="search">
+          <label for="search-input" class="sr-only">Search by product name or 6-digit code</label>
+          <input 
+            type="search" 
+            id="search-input" 
+            class="search-input" 
+            placeholder="Search by product name or 6-digit code..." 
+            autocomplete="off"
+            spellcheck="false"
+          >
+          <button type="button" id="search-clear" class="search-clear-btn" aria-label="Clear Search">&times;</button>
+        </form>
+      </section>
+
+      <section class="category-section" aria-label="Product Categories">
+        <div id="category-container" class="category-scroll-container"></div>
+      </section>
+
+      <section>
+        <div class="section-header">
+          <h2 class="section-title">Discover</h2>
+          <a href="products.html" class="section-link">See all &rarr;</a>
+        </div>
+        <div id="product-grid" class="product-grid" aria-live="polite"></div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-container footer-inner">
+      <p>&copy; PromoSphere. All rights reserved.</p>
+      <p class="footer-disclaimer">PromoSphere is a discovery catalog featuring affiliated product links. We do not sell items directly or handle fulfillment.</p>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
