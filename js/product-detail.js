@@ -43,7 +43,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const safeName = Utils.escapeHTML(item.name);
     const safeDesc = (item.description && item.description.trim()) ? Utils.escapeHTML(item.description.trim()) : "";
-    const safePrice = item.price ? Utils.formatPrice(item.price, item.currency) : "";
     const safeCategory = (item.category && item.category.trim()) ? Utils.escapeHTML(item.category.trim()) : "";
     const safeAffiliateUrl = Utils.sanitizeURL(item.affiliateUrl);
     const hasImage = Array.isArray(item.images) && item.images.length > 0 && item.images[0];
@@ -60,20 +59,6 @@ document.addEventListener("DOMContentLoaded", async () => {
           onerror="Utils.handleImgError(this)"
         />`
       : Utils.getNeutralPlaceholder();
-
-    let specsHtml = "";
-    if (Array.isArray(item.specifications) && item.specifications.length > 0) {
-      const rows = item.specifications
-        .filter(s => s && s.label && s.value && String(s.label).trim() && String(s.value).trim())
-        .map(s => `<tr><td>${Utils.escapeHTML(s.label)}</td><td>${Utils.escapeHTML(s.value)}</td></tr>`)
-        .join("");
-      if (rows) {
-        specsHtml = `
-          <h2 class="spec-heading">Specifications</h2>
-          <table class="spec-table"><tbody>${rows}</tbody></table>
-        `;
-      }
-    }
 
     const ctaHtml = safeAffiliateUrl
       ? `<a 
@@ -100,9 +85,7 @@ document.addEventListener("DOMContentLoaded", async () => {
           <span class="detail-code">Product Code: #${Utils.escapeHTML(item.id)}</span>
           ${safeCategory ? `<span class="product-category-tag">${safeCategory}</span>` : ""}
           <h1 class="detail-title">${safeName}</h1>
-          ${safePrice ? `<div class="detail-price">${safePrice}</div>` : ""}
           ${safeDesc ? `<p class="detail-description">${safeDesc}</p>` : ""}
-          ${specsHtml}
 
           <!-- Price & Availability Notice -->
           <div class="product-notice-box" role="note">
