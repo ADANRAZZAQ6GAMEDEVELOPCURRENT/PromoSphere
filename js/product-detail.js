@@ -87,13 +87,6 @@ document.addEventListener("DOMContentLoaded", async () => {
           <h1 class="detail-title">${safeName}</h1>
           ${safeDesc ? `<p class="detail-description">${safeDesc}</p>` : ""}
 
-          <!-- Price & Availability Notice -->
-          <div class="product-notice-box" role="note">
-            <h3 class="product-notice-title">Price &amp; Availability Notice</h3>
-            <p class="product-notice-text">Prices, discounts, promotions, shipping costs, taxes, availability, and other purchasing conditions shown on PromoSphere are subject to change at any time without notice.</p>
-            <p class="product-notice-text">The price and purchasing conditions displayed on the linked retailer or marketplace at the time of purchase are the applicable ones. Please verify the current price and other details on the retailer's product page before completing your purchase.</p>
-          </div>
-
           <div class="detail-btn-action">
             ${ctaHtml}
           </div>
@@ -104,13 +97,8 @@ document.addEventListener("DOMContentLoaded", async () => {
       <section class="product-disclaimer-card" aria-label="Affiliate &amp; Transparency Disclaimer">
         <h2 class="product-disclaimer-title">Affiliate &amp; Transparency Disclaimer</h2>
         <div class="product-disclaimer-body">
-          <p>PromoSphere may participate in affiliate programs, including programs operated by third-party marketplaces and retailers. When you click a product link and make a qualifying purchase, PromoSphere may receive a commission at no additional cost to you.</p>
-          <p>We aim to present products and information honestly and transparently. However, product availability, specifications, descriptions, images, reviews, seller information, shipping terms, warranties, return policies, and other details are provided or controlled by the respective third-party seller or marketplace and may change without notice.</p>
-          <p>We do not manufacture, stock, inspect, ship, sell, or directly control the products listed through affiliate links unless explicitly stated otherwise. We therefore cannot independently guarantee the condition, quality, authenticity, safety, legality, suitability, availability, delivery, or performance of any third-party product.</p>
-          <p>Information displayed on PromoSphere is provided for general informational and discovery purposes. We do not knowingly intend to misrepresent a product or conceal material information. If we become aware that information is inaccurate, outdated, misleading, or otherwise inappropriate, we may correct or remove it where reasonably possible.</p>
-          <p>Before purchasing, please review the product's current listing, specifications, seller information, applicable terms, reviews, shipping details, return/refund policy, warranty information, and any other relevant information provided by the actual seller or marketplace.</p>
-          <p>By proceeding to a third-party website or purchasing through an affiliate link, you acknowledge that the transaction is with the respective third party and is subject to that party's terms and policies.</p>
-          <p>If you notice an error, misleading information, or another issue with a product listing on PromoSphere, please let us know so we can review it and make corrections where appropriate.</p>
+          <p>PromoSphere may participate in affiliate programs. When you click a product link and make a qualifying purchase, PromoSphere may receive a commission at no additional cost to you.</p>
+          <p>Product availability, descriptions, and other details are managed and controlled by the respective third-party seller or retailer and may change at any time without notice.</p>
         </div>
       </section>
     `;
