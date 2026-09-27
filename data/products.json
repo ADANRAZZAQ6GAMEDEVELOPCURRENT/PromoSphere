@@ -1,15 +1,13 @@
 [
-  {
-    "id": "100201",
-    "name": "Sample Table Lamp",
-    "category": "Home",
-    "description": "Demonstration product listing for a table lamp.",
-    "images": [
-      "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=800&q=80"
-    ],
-    "affiliateUrl": "https://example.com/demo/100201",
-    "featured": true
-  },
+ {
+  "id": "100201",
+  "name": "2-Piece Car Seat Gap Storage Plugs",
+  "category": "Automotive",
+  "description": "A 2-piece car seat gap storage solution designed to fill the space between the car seat and center console while providing additional storage space.",
+  "images": [],
+  "affiliateUrl": "https://temu.to/k/e3lpc69qpvw",
+  "featured": true
+},
   {
     "id": "100202",
     "name": "Sample Tea Kettle",
