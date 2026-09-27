@@ -1,18 +1,13 @@
 [
   {
     "id": "100201",
-    "name": "2pcs Universal Car Seat Gap Plug Strip Side Seam Car Gap Filler Leak Proof Seat Gap Storage Organizer Interior Decoration
-",
-    "category": "Accessories",
-   
+    "name": "Sample Table Lamp",
+    "category": "Home",
+    "description": "Demonstration product listing for a table lamp.",
     "images": [
       "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=800&q=80"
     ],
     "affiliateUrl": "https://example.com/demo/100201",
-    "specifications": [
-      { "label": "Model", "value": "TL-01" },
-      { "label": "Type", "value": "Lamp" }
-    ],
     "featured": true
   },
   {
@@ -20,13 +15,10 @@
     "name": "Sample Tea Kettle",
     "category": "Home",
     "description": "Demonstration product listing for a tea kettle.",
-    "price": "39.50",
-    "currency": "USD",
     "images": [
       "https://images.unsplash.com/photo-1556881286-fc6915169721?auto=format&fit=crop&w=800&q=80"
     ],
     "affiliateUrl": "https://example.com/demo/100202",
-    "specifications": [],
     "featured": true
   },
   {
@@ -34,15 +26,10 @@
     "name": "Over-Ear Wireless Headphones",
     "category": "Electronics",
     "description": "Demonstration product listing for over-ear headphones.",
-    "price": "89.00",
-    "currency": "USD",
     "images": [
       "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80"
     ],
     "affiliateUrl": "https://example.com/demo/200301",
-    "specifications": [
-      { "label": "Type", "value": "Headphones" }
-    ],
     "featured": true
   },
   {
@@ -50,13 +37,10 @@
     "name": "Mechanical Keyboard",
     "category": "Electronics",
     "description": "Demonstration product listing for a mechanical keyboard.",
-    "price": "75.00",
-    "currency": "USD",
     "images": [
       "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=800&q=80"
     ],
     "affiliateUrl": "https://example.com/demo/200302",
-    "specifications": [],
     "featured": true
   },
   {
@@ -64,13 +48,10 @@
     "name": "Canvas Tote Bag",
     "category": "Accessories",
     "description": "Demonstration product listing for a canvas tote bag.",
-    "price": "24.00",
-    "currency": "USD",
     "images": [
       "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80"
     ],
     "affiliateUrl": "https://example.com/demo/300401",
-    "specifications": [],
     "featured": true
   },
   {
@@ -78,13 +59,10 @@
     "name": "Knit Beanie",
     "category": "Fashion",
     "description": "Demonstration product listing for a knit beanie.",
-    "price": "18.00",
-    "currency": "USD",
     "images": [
       "https://images.unsplash.com/photo-1576871337622-98d48d1cf531?auto=format&fit=crop&w=800&q=80"
     ],
     "affiliateUrl": "https://example.com/demo/300402",
-    "specifications": [],
     "featured": true
   },
   {
@@ -92,13 +70,10 @@
     "name": "Glass Soap Dispenser",
     "category": "Lifestyle",
     "description": "Demonstration product listing for a soap dispenser.",
-    "price": "14.50",
-    "currency": "USD",
     "images": [
       "https://images.unsplash.com/photo-1608248597359-25f007b31174?auto=format&fit=crop&w=800&q=80"
     ],
     "affiliateUrl": "https://example.com/demo/400501",
-    "specifications": [],
     "featured": true
   },
   {
@@ -106,13 +81,10 @@
     "name": "Aromatherapy Oil Bottle",
     "category": "Beauty",
     "description": "Demonstration product listing for an oil bottle.",
-    "price": "12.00",
-    "currency": "USD",
     "images": [
       "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=800&q=80"
     ],
     "affiliateUrl": "https://example.com/demo/400502",
-    "specifications": [],
     "featured": true
   },
   {
@@ -120,13 +92,10 @@
     "name": "Floor Yoga Mat",
     "category": "Fitness",
     "description": "Demonstration product listing for a yoga mat.",
-    "price": "55.00",
-    "currency": "USD",
     "images": [
       "https://images.unsplash.com/photo-1592432678016-e910b452f9a2?auto=format&fit=crop&w=800&q=80"
     ],
     "affiliateUrl": "https://example.com/demo/500601",
-    "specifications": [],
     "featured": true
   },
   {
@@ -134,13 +103,10 @@
     "name": "Insulated Water Flask",
     "category": "Fitness",
     "description": "Demonstration product listing for a water flask.",
-    "price": "26.00",
-    "currency": "USD",
     "images": [
       "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=800&q=80"
     ],
     "affiliateUrl": "https://example.com/demo/500602",
-    "specifications": [],
     "featured": true
   },
   {
@@ -148,13 +114,10 @@
     "name": "Hardcover Notebook",
     "category": "Lifestyle",
     "description": "Demonstration product listing for a hardcover notebook.",
-    "price": "16.00",
-    "currency": "USD",
     "images": [
       "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80"
     ],
     "affiliateUrl": "https://example.com/demo/600701",
-    "specifications": [],
     "featured": false
   },
   {
@@ -162,11 +125,8 @@
     "name": "Minimal Sample Item",
     "category": "",
     "description": "",
-    "price": "",
-    "currency": "",
     "images": [],
     "affiliateUrl": "",
-    "specifications": [],
     "featured": false
   }
 ]
