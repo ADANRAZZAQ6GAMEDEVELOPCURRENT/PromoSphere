@@ -11,8 +11,21 @@ const Utils = {
 
   sanitizeURL(url) {
     if (!url || typeof url !== "string") return "";
+    const cleanUrl = url.trim();
+
+    // Block dangerous javascript: or data: protocols
+    if (/^(javascript:|data:|vbscript:)/i.test(cleanUrl)) {
+      return "";
+    }
+
+    // Allow relative local project paths (e.g. assets/..., ./assets/...)
+    if (cleanUrl.startsWith("./") || cleanUrl.startsWith("../") || cleanUrl.startsWith("assets/") || cleanUrl.startsWith("/")) {
+      return cleanUrl;
+    }
+
+    // Validate full external URLs
     try {
-      const parsed = new URL(url.trim());
+      const parsed = new URL(cleanUrl);
       if (parsed.protocol === "http:" || parsed.protocol === "https:") {
         return parsed.href;
       }
